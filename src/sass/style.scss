@@ -1,0 +1,32 @@
+@import "vendor/_reset";
+
+@import "base/_colors";
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Open-Sans', Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: table;
+}
+
+@import "partials/_header";
