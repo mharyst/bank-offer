@@ -2,6 +2,8 @@
 
 @import "base/_colors";
 
+@import "base/_fonts";
+
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -15,7 +17,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 900px;
+  max-width: 990px;
   margin: 0 auto;
 }
 
@@ -30,3 +32,4 @@ body {
 }
 
 @import "partials/_header";
+@import "partials/_main";
