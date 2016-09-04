@@ -31,5 +31,10 @@ body {
   display: table;
 }
 
+*::selection {
+  background-color: $color-primary;
+  color: #ffffff;
+}
+
 @import "partials/_header";
 @import "partials/_main";

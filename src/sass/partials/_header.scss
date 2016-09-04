@@ -25,11 +25,13 @@
 
 .header-banner {
   height: 100px;
-  background: url(../img/header-bg.png) center no-repeat;
+  background:
+    url(../img/header-bg.png) center no-repeat,
+    linear-gradient(#ffdf8a, #f8ad16);
 
   .logo {
     font-family: 'UniSansHeavyItalic', sans-serif;
-    padding-top: 38px;
+    padding: 37px 6px;
     font-size: 37.5px;
     color: $color-logo;
     text-transform: uppercase;

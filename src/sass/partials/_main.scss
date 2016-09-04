@@ -1,16 +1,141 @@
 .main {
+  a {
+    color: $color-primary;
+  }
+
+  & > * {
+    margin-bottom: 10px;
+  }
+
   .deposit {
     height: 52px;
-    background-color: #ededed;
-    background-image: linear-gradient(to top, #ededed 0%, #f2f2f2 100%);
+    background:
+      url('../img/menu-ellipse.png') center no-repeat,
+      linear-gradient(to top, #ededed 0%, #f2f2f2 100%);
     border: 1px solid #d9d9d9;
     border-radius: 3px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 3px 0 white;
+    padding: 0 13px;
 
     h1 {
       color: $color-font-heading;
       font-size: 16px;
       font-weight: 700;
+      line-height: 52px;
+      letter-spacing: .4px;
     }
+  }
+
+  .operations {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: 270px;
+    background-color: $color-bg;
+    border-radius: 3px 0 0 3px;
+    padding: 24px 13px;
+    font-size: 12px;
+    font-weight: 700;
+
+    & > * {
+      margin-bottom: 12px;
+    }
+  }
+
+  .new-method {
+    padding: 13px 10px;
+    border: 1px solid $color-border;
+    border-left: 0;
+    border-right: 0;
+    a {
+      color: $color-font;
+    }
+  }
+
+  .block {
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    & > * {
+      line-height: 40px;
+    }
+  }
+
+  .block-heading {
+    padding: 0 10px;
+    background-image: linear-gradient(to top, #f2f2f2 0%, white 100%);
+    color: $color-font-heading-content;
+  }
+
+  .block-list a {
+    display: block;
+    padding: 0 10px;
+  }
+
+  .content {
+    padding: 24px 29px;
+    border: 1px solid $color-border;
+    border-radius: 0 3px 3px 0;
+    letter-spacing: .2px;
+    margin-right: 20px;
+  }
+
+  .section {
+    margin-bottom: 32px;
+  }
+
+  .section-heading {
+    font-size: 13px;
+    font-weight: 700;
+    color: $color-font-heading-content;
+    line-height: 40px;
+    border-bottom: 1px solid $color-border;
+    margin-bottom: 18px;
+    padding-bottom: 3px;
+  }
+
+  .section-content {
+    padding: 0 24px;
+    font-size: 11px;
+    td {
+      height: 20px;
+
+      &:first-child {
+        width: 169px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .section-account {
+    .section-content {
+      padding: 20px 24px 5px 24px;
+      border: 1px solid $color-border;
+      border-radius: 6px;
+
+      td {
+        height: 25px;
+      }
+    }
+  }
+
+  .section-info {
+    .section-content {
+      padding: 12px 24px;
+      border: 1px solid $color-border;
+      border-radius: 6px;
+      padding-left: 136px;
+      line-height: 15px;
+      background-image: linear-gradient(to top, #f7f7f7 0%, white 100%);
+    }
+  }
+
+  .information {
+    width: 100%;
+    max-width: 220px;
   }
 }
