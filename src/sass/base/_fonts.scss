@@ -7,3 +7,49 @@
   font-family: 'UniSansHeavyItalic';
   src:  url('../fonts/UniSansHeavyItalic.otf') format('opentype');
 }
+
+@font-face {
+  font-family: 'bank-offer';
+  src:  url('../fonts/bank-offer.eot?itq1nu');
+  src:  url('../fonts/bank-offer.eot?itq1nu#iefix') format('embedded-opentype'),
+    url('../fonts/bank-offer.ttf?itq1nu') format('truetype'),
+    url('../fonts/bank-offer.woff?itq1nu') format('woff'),
+    url('../fonts/bank-offer.svg?itq1nu#bank-offer') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  font-family: 'bank-offer' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-speech-bubble {
+  &:before {
+    content: "\e900";
+  }
+}
+.icon-mail {
+  &:before {
+    content: "\e901";
+  }
+}
+.icon-phone {
+  &:before {
+    content: "\e902";
+  }
+}
+.icon-tick {
+  &:before {
+    content: "\e903";
+  }
+}

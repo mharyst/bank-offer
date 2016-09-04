@@ -10,6 +10,7 @@
   .deposit {
     height: 52px;
     background:
+      url('../img/coins-plus.png') 98% center no-repeat,
       url('../img/menu-ellipse.png') center no-repeat,
       linear-gradient(to top, #ededed 0%, #f2f2f2 100%);
     border: 1px solid #d9d9d9;
@@ -47,11 +48,13 @@
   }
 
   .new-method {
-    padding: 13px 10px;
     border: 1px solid $color-border;
     border-left: 0;
     border-right: 0;
+    background: url('../img/plus.png') 91% center no-repeat;
     a {
+      display: block;
+      padding: 13px 10px;
       color: $color-font;
     }
   }
@@ -96,6 +99,10 @@
     border-bottom: 1px solid $color-border;
     margin-bottom: 18px;
     padding-bottom: 3px;
+
+    .bank-logo {
+      padding-left: 15px;
+    }
   }
 
   .section-content {
@@ -125,17 +132,115 @@
 
   .section-info {
     .section-content {
-      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      padding: 12px 34px;
+      padding-bottom: 17px;
       border: 1px solid $color-border;
       border-radius: 6px;
-      padding-left: 136px;
       line-height: 15px;
-      background-image: linear-gradient(to top, #f7f7f7 0%, white 100%);
+      background-image: linear-gradient(to top, $color-bg-heading 0%, white 100%);
+    }
+
+    .learn-more {
+      font-weight: 700;
+    }
+
+    .section-content-img {
+      margin-right: 36px;
     }
   }
 
   .information {
     width: 100%;
     max-width: 220px;
+  }
+
+  .block-support,
+  .block-secure {
+    border: 1px solid $color-border;
+    border-radius: 3px;
+    margin-bottom: 11px;
+  }
+
+  .support-heading {
+    min-height: 74px;
+    border-bottom: 1px solid $color-border;
+    position: relative;
+    background:
+      url('../img/support-cloud.png') 75px 24px no-repeat,
+      $color-bg-heading;
+
+    .support-img {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+    }
+
+    .support-text {
+      position: absolute;
+      top: 33px;
+      right: 30px;
+      color: #4c4c4c;
+      font-size: 11px;
+      font-weight: 600;
+    }
+  }
+
+  .support-contacts {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 15px 21px;
+    line-height: 21.5px;
+
+    li {
+      display: flex;
+      align-items: baseline;
+      color: #4c4c4c;
+    }
+
+    a {
+      display: block;
+    }
+
+    i {
+      color: #d9d9d9;
+      font-size: 8px;
+      margin-right: 11px;
+    }
+  }
+
+  .block-secure {
+    font-size: 11px;
+  }
+
+  .secure-heading {
+    font-weight: 700;
+    padding: 9px 21px;
+    border-bottom: 1px solid $color-border;
+    background: url("../img/tick.png") 6% center no-repeat;
+  }
+
+  .secure-heading-text {
+    padding-left: 12px;
+    letter-spacing: .3px;
+  }
+
+  .secure-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    background: url("../img/secure-bg.png") center bottom no-repeat;
+
+    img {
+      margin-bottom: 16px;
+    }
+  }
+
+  .secure-bottom-text {
+    font-weight: 400;
+    line-height: 17px;
+    text-align: justify;
   }
 }
