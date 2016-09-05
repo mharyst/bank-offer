@@ -18,7 +18,7 @@
     border: 1px solid #d9d9d9;
     border-radius: 3px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 3px 0 white;
-    padding: 0 13px;
+    padding: 0 19px;
 
     h1 {
       color: $color-font-heading;
@@ -40,19 +40,16 @@
     max-width: 270px;
     background-color: $color-bg;
     border-radius: 3px 0 0 3px;
-    padding: 24px 13px;
-    font-size: 12px;
+    padding: 24px 19px;
+    font-size: 11px;
     font-weight: 700;
-
-    & > * {
-      margin-bottom: 12px;
-    }
   }
 
   .new-method {
     border: 1px solid $color-border;
     border-left: 0;
     border-right: 0;
+    margin-bottom: 15px;
     background: url('../img/plus.png') 91% center no-repeat;
     a {
       display: block;
@@ -62,6 +59,7 @@
   }
 
   .block {
+    margin-bottom: 19px;
     background-color: #fff;
     border-radius: 3px;
     overflow: hidden;
@@ -76,9 +74,13 @@
     color: $color-font-heading-content;
   }
 
-  .block-list a {
-    display: block;
-    padding: 0 10px;
+  .block-list {
+    padding: 10px 0;
+    a {
+      line-height: 22px;
+      display: block;
+      padding: 0 10px;
+    }
   }
 
   .content {

@@ -9,7 +9,57 @@
   height: 30px;
   line-height: 30px;
   font-family: Tahoma,Geneva,Kalimati,sans-serif;
-  font-size: 11px;
+  font-size: 10px;
+
+  .icon {
+    position: relative;
+    padding-left: 19px;
+    height: 30px;
+    display: inline-block;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 13px;
+      height: 30px;
+    }
+  }
+
+  .icon-clock {
+    &:before {
+      background: url("../img/watch.png") center no-repeat;
+    }
+  }
+
+  .icon-fb {
+    text-indent: -999em;
+
+    &:before {
+      background: url("../img/fb.png") center no-repeat;
+    }
+  }
+
+  .icon-twitter {
+    text-indent: -999em;
+
+    &:before {
+      background: url("../img/twitter.png") center no-repeat;
+    }
+  }
+
+  .icon-chat {
+    &:before {
+      background: url("../img/chat.png") center no-repeat;
+    }
+  }
+
+  .icon-settings {
+    &:before {
+      background: url("../img/settings.png") center no-repeat;
+    }
+  }
 
   .time {
     float: left;
@@ -17,10 +67,24 @@
 
   .account {
     float: right;
-    margin-right: 200px;
+    margin-right: 226px;
     & > * {
       margin: 0 20px;
       float: left;
+    }
+  }
+
+  .social,
+  .chat {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      top: 11px;
+      width: 1px;
+      height: 11px;
+      border-right: 1px solid $color-border;
     }
   }
 }
@@ -58,7 +122,8 @@
         color: #fff;
         line-height: inherit;
         padding: 0 15px;
-        font-size: 13px;
+        font-size: 12px;
+        font-weight: 600;
         &.active,
         &:hover {
           background-color: #333;
