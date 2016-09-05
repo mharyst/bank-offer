@@ -1,4 +1,6 @@
 .main {
+  margin-bottom: 36px;
+
   a {
     color: $color-primary;
   }
@@ -81,6 +83,7 @@
 
   .content {
     padding: 24px 29px;
+    padding-bottom: 52px;
     border: 1px solid $color-border;
     border-radius: 0 3px 3px 0;
     letter-spacing: .2px;

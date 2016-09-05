@@ -1,0 +1,132 @@
+.footer {
+  font-family: Tahoma,Geneva,Kalimati,sans-serif;
+  width: 100%;
+  background-color: $color-bg-heading;
+  font-size: 11px;
+  color: #444;
+  border-top: 1px solid $color-border;
+
+  .links,
+  .links-list,
+  .logos-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .links {
+    justify-content: flex-end;
+    height: 69px;
+    align-items: center;
+
+    li {
+      position: relative;
+      padding: 0 20px;
+
+      &:before {
+        position: absolute;
+        content: "\2022";
+        display: inline-block;
+        margin: 2px 15px 0 0;
+        font-size: 8px;
+        color: #888;
+        left: 0;
+      }
+
+      &:first-child:before {
+        content: "";
+      }
+    }
+
+    .btn-pagetop {
+      position: relative;
+      padding: 3px 16px 3px 25px;
+      margin-left: 34px;
+      line-height: 21px;
+      cursor: pointer;
+      border-radius: 3px;
+      background-image: linear-gradient(#fff,#f2f2f2);
+      border: 1px solid $color-border;
+      color: $color-font-lighter;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 25px;
+        background: url("../img/arrow-up.png") center center no-repeat;
+      }
+    }
+  }
+
+  .logos,
+  .copyright {
+    margin-bottom: 26px;
+  }
+
+  .logos-list {
+    padding: 19px 0;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+
+    .brand {
+      display: inline-block;
+      width: 100%;
+      height: 20px;
+      text-indent: -999em;
+      background: url("/img/logos-footer.png") no-repeat;
+    }
+
+    a.logo {
+      display: block;
+    }
+
+    .mastercard .brand {
+      background-position: -32% -308px;
+    }
+    .paypal .brand {
+      background-position: 0 -229px;
+    }
+    .visa .brand {
+      background-position: -42% -600px;
+    }
+    .skrill .brand {
+      background-position: 25% -383px;
+    }
+    .neteller .brand {
+      background-position: center 0;
+    }
+    .paysafecard .brand {
+      background-position: 110% -80px;
+    }
+    .ukash .brand {
+      background-position: 80% -153px;
+    }
+
+    li {
+      width: 100%;
+    }
+  }
+
+  .copyright,
+  .license {
+    font-size: 10px;
+    line-height: 1.3;
+    color: #999;
+  }
+
+  .license {
+    background-image: linear-gradient(#ededed,#dbdbdb);
+
+    .container {
+      display: flex;
+      padding: 27px 0;
+      margin-top: 7px;
+    }
+
+    .license-img {
+      margin-right: 59px;
+    }
+  }
+}
