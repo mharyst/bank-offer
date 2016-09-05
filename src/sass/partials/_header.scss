@@ -11,6 +11,10 @@
   font-family: Tahoma,Geneva,Kalimati,sans-serif;
   font-size: 10px;
 
+  a {
+    color: $color-font-lighter;
+  }
+
   .icon {
     position: relative;
     padding-left: 19px;
@@ -96,11 +100,16 @@
     linear-gradient(#ffdf8a, #f8ad16);
 
   .logo {
+    display: block;
     font-family: 'UniSansHeavyItalic', sans-serif;
     padding: 37px 6px;
     font-size: 37.5px;
     color: $color-logo;
     text-transform: uppercase;
+    transition: color .3s;
+    &:hover {
+      color: $color-primary;
+    }
   }
 }
 
@@ -124,9 +133,10 @@
         padding: 0 15px;
         font-size: 12px;
         font-weight: 600;
+        transition: background .6s;
         &.active,
         &:hover {
-          background-color: #333;
+          background: #333;
         }
       }
     }
